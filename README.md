@@ -30,6 +30,7 @@ vagrant ssh worker2
 sudo kubeadm init --apiserver-advertise-address=192.168.50.100
 ```
 And copy the join command. 
+
 5.	Then run the commands:
 ```bash
 mkdir -p $HOME/.kube
