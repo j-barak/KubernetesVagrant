@@ -18,6 +18,7 @@ To set up a Kubernetes cluster using Vagrant, follow these steps:
 1. Clone this repository to your local machine, open Git BASH in the projects folder and run:
 ```bash
 vagrant up
+```
 3. Use vagrant to ssh into each VM(separate terminals):
 ```bash
 vagrant ssh master
@@ -25,7 +26,8 @@ vagrant ssh worker1
 vagrant ssh worker2
 4.	Then on the master node:
 ```bash
-sudo kubeadm init --apiserver-advertise-address=192.168.50.100
+sudo kubeadm init --apiserver-a
+dvertise-address=192.168.50.100
 And copy the join command. 
 5.	Then run the commands:
 ```bash
