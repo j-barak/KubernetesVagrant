@@ -57,6 +57,8 @@ kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
 
 Note: A better approach is to build your own Vagrant Base Box for Ubuntu server 22.04 and use it as your local box provider.
 Check that each worker node has /etc/cni/net.d/ folder with all the neccessary Calico configurations of the target cluster.
+
+
 For advanced trouble shooting of the issue (when master Ready, but worker NotReady) use the following command on master node:
 ```bash
 kubectl config view
